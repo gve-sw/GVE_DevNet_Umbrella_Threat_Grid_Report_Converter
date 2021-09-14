@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Umbrella Data</title>
+</head>
+<body>
+<b>UMBRELLA DATA</b>
+<br><br>
+{% for item in data %}
+    {% for header in headers %}
+        <i>{{ header }}</i>: {{ item[header] }}<br>
+    {% endfor %}
+    <br><br>
+{% endfor %}
+</body>
+</html>
